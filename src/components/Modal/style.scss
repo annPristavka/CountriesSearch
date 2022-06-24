@@ -1,0 +1,72 @@
+.overlay {
+    width: 75%;
+    margin: 0 auto;
+    height: 50vh;
+    background-color: rgb(253, 253, 253);
+    position: relative;
+    box-sizing: border-box;
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+    }
+
+    .overlay-inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100%;
+        
+        .cover {
+            height: 100%;
+            width: 100%;
+            background-color: rgba(245, 245, 245, 0.815);
+            display: grid;
+            img {
+                width: 200px;
+                height: 250px;
+                box-shadow: 20px 20px 20px rgba(163, 163, 161, 0.815);
+                justify-self: center;
+	            align-self: center;
+            }
+        }
+        
+        .inner-box {
+            margin: 40px 60px;
+            //border: 1px solid red;
+            
+            .navigation {
+
+            }
+            .navigation + * {
+                margin-top: 55px;
+            }
+
+            h3 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 32px;
+
+            }
+
+            .author {
+                text-decoration: underline;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 16px;
+                color:rgba(107, 107, 107, 0.815);
+            }
+
+            .description {
+                border: 1px solid rgb(175, 173, 173);
+                font-family: 'Montserrat', sans-serif;
+                font-size: 16px;
+                font-weight: 500;
+                text-align: justify;
+                padding: 15px;
+                margin-top: 55px;
+            }
+
+        }
+    }
+}
